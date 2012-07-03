@@ -8,14 +8,14 @@
 		<artifactId>thrift-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>thrift-core</artifactId>
+	<artifactId>thrift-webclient</artifactId>
 	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.thrift</groupId>
-			<artifactId>libthrift</artifactId>
-			<version>0.8.0</version>
+			<groupId>com.sopovs.moradanen</groupId>
+			<artifactId>thrift-core</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 
