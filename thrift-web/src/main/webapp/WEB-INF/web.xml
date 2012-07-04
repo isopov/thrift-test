@@ -3,6 +3,30 @@
     PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
     "http://java.sun.com/dtd/web-app_2_3.dtd">
 <web-app>
-  <display-name>thrift-web</display-name>
- 
+	<display-name>thrift-web</display-name>
+
+	<servlet>
+		<servlet-name>Initialization</servlet-name>
+		<servlet-class>com.sopovs.moradanen.thrift.InitializationServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>delegateThriftServlet</servlet-name>
+		<servlet-class>com.sopovs.moradanen.thrift.DelegateHttpServlet</servlet-class>
+
+		<init-param>
+			<param-name>servletContextKey</param-name>
+			<param-value>thriftServlet</param-value>
+		</init-param>
+
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>delegateThriftServlet</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
 </web-app>
