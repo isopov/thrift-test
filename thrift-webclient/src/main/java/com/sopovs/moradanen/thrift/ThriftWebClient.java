@@ -11,7 +11,7 @@ public class ThriftWebClient {
 
 	public void invoke() throws Exception {
 
-		TTransport client = new THttpClient("http://localhost:8080/thrift-web/helloService");
+		TTransport client = new THttpClient("http://localhost:8080/thrift-web-spring/hello");
 
 		TProtocol protocol = new TBinaryProtocol(client);
 
