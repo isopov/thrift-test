@@ -8,7 +8,7 @@
 		<artifactId>thrift-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>thrift-web</artifactId>
+	<artifactId>thrift-web-simple</artifactId>
 	<packaging>war</packaging>
 
 	<dependencies>
