@@ -13,6 +13,7 @@
 		<module>thrift-core</module>
 		<module>thrift-web-simple</module>
 		<module>thrift-web-spring</module>
+		<module>thrift-web-guice</module>
 		<module>thrift-webclient</module>
 	</modules>
 
